@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Calculator</string>
+    <string name="welcome">Welcome to my Calculator APP</string>
+    <string name="op1">Type first number</string>
+    <string name="number1">Number 1...</string>
+    <string name="op2">Type second number</string>
+    <string name="number2">Number 2...</string>
+    <string name="sumar">+</string>
+    <string name="restar">-</string>
+    <string name="multiplicar">x</string>
+    <string name="dividir">·/·</string>
+    <string name="calculate">Calculate</string>
+    <string name="result">The result is:</string>
+</resources>
