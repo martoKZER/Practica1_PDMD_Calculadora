@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
             binding.etxNumber1.getText();
         }else{
             //MOSTRAR MENSAJE EMERGENTE "FALTA INTRODUCIR N1".
+
         }
     }
 }
