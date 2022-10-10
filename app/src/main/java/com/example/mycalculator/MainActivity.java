@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.example.mycalculator.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
-    //En el metodo onCreate irá todo el código que se tiene que ejecutar al abrir la aplicación
+    //En el metodo onCreate irá el código que se tiene que ejecutar al abrir la aplicación
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
