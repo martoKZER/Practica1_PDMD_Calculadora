@@ -8,12 +8,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.mycalculator.databinding.ActivityMainBinding;
-
-import java.text.NumberFormat;
-import java.text.ParseException;
-import java.util.Locale;
-import java.util.Objects;
-
 public class MainActivity extends AppCompatActivity {
 
     //En el metodo onCreate irá todo el código que se tiene que ejecutar al abrir la aplicación
@@ -27,19 +21,16 @@ public class MainActivity extends AppCompatActivity {
         EditText etxNumber2 = binding.etxNumber2;
 
         TextView tvResult = binding.tvResult;
-        NumberFormat nf = NumberFormat.getInstance(Locale.FRANCE);
         binding.btnSumar.setOnClickListener(v -> {
             if (etxNumber1.getText() != null || etxNumber2.getText() != null) {
                 try {
-                    //double n1 = Double.parseDouble(String.valueOf(etxNumber1));
-                    double n1 = Objects.requireNonNull(nf.parse(etxNumber1.toString())).doubleValue();
-                    //double n2 = Double.parseDouble(String.valueOf(etxNumber2));
-                    double n2 = Objects.requireNonNull(nf.parse(etxNumber2.toString())).doubleValue();
-                    double res = n1 + n2;
-                    String resultado = Double.toString(res);
+                    int n1 = Integer.parseInt(String.valueOf(etxNumber1));
+                    int n2 = Integer.parseInt(String.valueOf(etxNumber2));
+                    int res = n1 + n2;
+                    String resultado = Integer.toString(res);
                     tvResult.setText(resultado);
 
-                } catch (NumberFormatException | ParseException e) {
+                } catch (NumberFormatException e) {
                     e.printStackTrace();
                 }
             } else {
@@ -53,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
         binding.btnRestar.setOnClickListener(v -> {
             if (etxNumber1.getText() != null || etxNumber2.getText() != null) {
-                double n1 = Double.parseDouble(String.valueOf(etxNumber1));
-                double n2 = Double.parseDouble(String.valueOf(etxNumber2));
-                String resultado = Double.toString(n1 - n2);
+                int n1 = Integer.parseInt(String.valueOf(etxNumber1));
+                int n2 = Integer.parseInt(String.valueOf(etxNumber2));
+                String resultado = Integer.toString(n1 - n2);
                 tvResult.setText(resultado);
             } else {
                 // Ir a otra actividad PASO 1.
@@ -67,9 +58,9 @@ public class MainActivity extends AppCompatActivity {
         });
         binding.btnMult.setOnClickListener(v -> {
             if (etxNumber1.getText() != null || etxNumber2.getText() != null) {
-                double n1 = Double.parseDouble(String.valueOf(etxNumber1));
-                double n2 = Double.parseDouble(String.valueOf(etxNumber2));
-                String resultado = Double.toString(n1 * n2);
+                int n1 = Integer.parseInt(String.valueOf(etxNumber1));
+                int n2 = Integer.parseInt(String.valueOf(etxNumber2));
+                String resultado = Integer.toString(n1 * n2);
                 tvResult.setText(resultado);
             } else {
                 // Ir a otra actividad PASO 1.
@@ -81,9 +72,9 @@ public class MainActivity extends AppCompatActivity {
         });
         binding.btnDiv.setOnClickListener(v -> {
             if (etxNumber1.getText() != null || etxNumber2.getText() != null) {
-                double n1 = Double.parseDouble(String.valueOf(etxNumber1));
-                double n2 = Double.parseDouble(String.valueOf(etxNumber2));
-                String resultado = Double.toString(n1 / n2);
+                int n1 = Integer.parseInt(String.valueOf(etxNumber1));
+                int n2 = Integer.parseInt(String.valueOf(etxNumber2));
+                String resultado = Integer.toString(n1 / n2);
                 tvResult.setText(resultado);
             } else {
                 // Ir a otra actividad PASO 1.

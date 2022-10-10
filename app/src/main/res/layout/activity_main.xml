@@ -2,6 +2,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -81,9 +83,9 @@
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
+                    android:onClick="onSumarClick"
                     android:text="@string/sumar"
-                    android:textSize="15sp"
-                    android:onClick="onSumarClick"/>
+                    android:textSize="15sp" />
 
                 <Button
                     android:id="@+id/btn_Restar"
@@ -124,8 +126,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:textSize="20sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
 
         </LinearLayout>
