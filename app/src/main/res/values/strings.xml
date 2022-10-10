@@ -11,4 +11,9 @@
     <string name="dividir">·/·</string>
     <string name="calculate">Calculate</string>
     <string name="result">The result is:</string>
+    <string name="whitespace">.WhitespaceActivity</string>
+    <string name="main">.MainActivity</string>
+    <string name="error">Error</string>
+    <string name="faltan_campos_por_rellenar">Faltan campos por rellenar</string>
+    <string name="ok">Ok</string>
 </resources>

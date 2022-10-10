@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCalculator"
         tools:targetApi="31">
+        <!-- Ir a otra actividad PASO 2: encontrar el ID de la actividad en el MANIFEST -->
+        <activity
+            android:name=".WhitespaceActivity"
+            android:label="@string/whitespace"
+            android:exported="false"
+            >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
