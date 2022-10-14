@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi Calculadora</string>
+    <string name="welcome">Bienvenido a APP Calculadora</string>
+    <string name="op1">Escribe el primer número</string>
+    <string name="number1">Número 1…</string>
+    <string name="number2">Número 2…</string>
+    <string name="op2">Escribe el segundo número</string>
+    <string name="result">El resultado es:</string>
+    <string name="error">Error</string>
+    <string name="faltan_campos_por_rellenar">Faltan campos</string>
+    <string name="ok">OK</string>
+    <string name="div0">No puedes dividir por 0</string>
+    <string name="calculate">calcular</string>
+</resources>
