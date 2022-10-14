@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         binding.btnSumar.setOnClickListener(v -> {
             if (etxNumber1.getText() != null || etxNumber2.getText() != null) {
                 try {
-                    int n1 = Integer.parseInt(String.valueOf(etxNumber1));
-                    int n2 = Integer.parseInt(String.valueOf(etxNumber2));
+                    int n1 = Integer.parseInt(String.valueOf(etxNumber1.getText()));
+                    int n2 = Integer.parseInt(String.valueOf(etxNumber2.getText()));
                     int res = n1 + n2;
                     String resultado = Integer.toString(res);
                     tvResult.setText(resultado);
@@ -33,54 +33,34 @@ public class MainActivity extends AppCompatActivity {
                 } catch (NumberFormatException e) {
                     e.printStackTrace();
                 }
-            } else {
-                // Ir a otra actividad PASO 1.
-                Intent intent = new Intent(MainActivity.this, WhitespaceActivity.class);
-                intent.putExtra("@string/whitespace", 0);
-                MainActivity.this.startActivity(intent);
-
             }
         });
 
         binding.btnRestar.setOnClickListener(v -> {
             if (etxNumber1.getText() != null || etxNumber2.getText() != null) {
-                int n1 = Integer.parseInt(String.valueOf(etxNumber1));
-                int n2 = Integer.parseInt(String.valueOf(etxNumber2));
-                String resultado = Integer.toString(n1 - n2);
+                int n1 = Integer.parseInt(String.valueOf(etxNumber1.getText()));
+                int n2 = Integer.parseInt(String.valueOf(etxNumber2.getText()));
+                int res = n1 - n2;
+                String resultado = Integer.toString(res);
                 tvResult.setText(resultado);
-            } else {
-                // Ir a otra actividad PASO 1.
-                Intent intent = new Intent(MainActivity.this, WhitespaceActivity.class);
-                intent.putExtra("@string/whitespace", 0);
-                MainActivity.this.startActivity(intent);
-
             }
         });
         binding.btnMult.setOnClickListener(v -> {
             if (etxNumber1.getText() != null || etxNumber2.getText() != null) {
-                int n1 = Integer.parseInt(String.valueOf(etxNumber1));
-                int n2 = Integer.parseInt(String.valueOf(etxNumber2));
-                String resultado = Integer.toString(n1 * n2);
+                int n1 = Integer.parseInt(String.valueOf(etxNumber1.getText()));
+                int n2 = Integer.parseInt(String.valueOf(etxNumber2.getText()));
+                int res = n1 * n2;
+                String resultado = Integer.toString(res);
                 tvResult.setText(resultado);
-            } else {
-                // Ir a otra actividad PASO 1.
-                Intent intent = new Intent(MainActivity.this, WhitespaceActivity.class);
-                intent.putExtra("@string/whitespace", 0);
-                MainActivity.this.startActivity(intent);
-
             }
         });
         binding.btnDiv.setOnClickListener(v -> {
             if (etxNumber1.getText() != null || etxNumber2.getText() != null) {
-                int n1 = Integer.parseInt(String.valueOf(etxNumber1));
-                int n2 = Integer.parseInt(String.valueOf(etxNumber2));
-                String resultado = Integer.toString(n1 / n2);
+                int n1 = Integer.parseInt(String.valueOf(etxNumber1.getText()));
+                int n2 = Integer.parseInt(String.valueOf(etxNumber2.getText()));
+                int res = n1 / n2;
+                String resultado = Integer.toString(res);
                 tvResult.setText(resultado);
-            } else {
-                // Ir a otra actividad PASO 1.
-                Intent intent = new Intent(MainActivity.this, WhitespaceActivity.class);
-                intent.putExtra("@string/whitespace", 0);
-                MainActivity.this.startActivity(intent);
             }
         });
     }
