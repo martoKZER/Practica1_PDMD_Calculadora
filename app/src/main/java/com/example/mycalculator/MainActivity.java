@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        //
         binding.btnRestar.setOnClickListener(v -> {
             if (etxNumber1.getText() != null || etxNumber2.getText() != null) {
                 int n1 = Integer.parseInt(String.valueOf(etxNumber1.getText()));
