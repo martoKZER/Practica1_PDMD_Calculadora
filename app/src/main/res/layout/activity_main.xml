@@ -17,9 +17,10 @@
 
             <TextView
                 android:id="@+id/welcome"
-                android:layout_width="300dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="45dp"
+                android:layout_marginStart="30dp"
                 android:text="@string/welcome"
                 android:textSize="22sp" />
 
