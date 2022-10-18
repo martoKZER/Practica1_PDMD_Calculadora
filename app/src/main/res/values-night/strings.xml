@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="calculate">Calculate</string>
+    <string name="app_name">My Calculator</string>
+    <string name="welcome">Welcome to my Calculator APP</string>
+    <string name="op1">Type first number</string>
+    <string name="number1">Number 1…</string>
+    <string name="op2">Type second number</string>
+    <string name="number2">Number 2…</string>
+    <string name="sumar" translatable="false">+</string>
+    <string name="restar" translatable="false">-</string>
+    <string name="multiplicar" translatable="false">x</string>
+    <string name="dividir" translatable="false">·/·</string>
+    <string name="result">The result is:</string>
+    <string name="whitespace" translatable="false">.WhitespaceActivity</string>
+    <string name="main" translatable="false">.MainActivity</string>
+    <string name="error">Error</string>
+    <string name="faltan_campos_por_rellenar">Missing fields</string>
+    <string name="ok">OK</string>
+    <string name="div0">You can\'t divide by 0</string>
+    <string name="calculate">calculate</string>
 </resources>
